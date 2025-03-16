@@ -203,7 +203,7 @@ class DataIngestor:
 
 if __name__ == "__main__":
     db_config = load_db_config("../docker/servers_local.json")
-    schema_loader = SchemaLoader("schemas/definitions/sinch_db/")
+    schema_loader = SchemaLoader("schemas/definitions/companya/")
     ingestor = DataIngestor(db_config, schema_loader)
 
     files = FileLoader("../data/to_process/").get_files()

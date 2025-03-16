@@ -13,7 +13,7 @@ schema_definitions_path = os.getenv("schema_definitions_path")
 db_config_path = os.getenv("db_config_path")
 
 def main():
-    load_yml = SchemaLoader("../ingestion/schemas/definitions/sinch_db/")
+    load_yml = SchemaLoader("../ingestion/schemas/definitions/companya/")
     tables_to_load = load_yml.load_tables()
 
     db_config = load_db_config('../docker/servers_local.json')

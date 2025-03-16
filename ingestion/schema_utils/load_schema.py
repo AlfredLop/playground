@@ -9,7 +9,7 @@ logging.basicConfig(
 )
 
 class SchemaLoader:
-    def __init__(self, schema_dir: str = "ingestion/schemas/definitions/sinch_db") -> None:
+    def __init__(self, schema_dir: str = "ingestion/schemas/definitions/companya") -> None:
         self.schema_dir = schema_dir
 
     def load_tables(self) -> List[Dict[str, Any]]:
@@ -37,5 +37,5 @@ class SchemaLoader:
 
 #this is for testing this standalone script assuming is run in the ingestion folder
 if __name__ == "__main__":
-    test = SchemaLoader("schemas/definitions/sinch_db/")
+    test = SchemaLoader("schemas/definitions/companya/")
     test.load_tables()
